@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Title text
+{% endblock %}
+
+
+{% block task %}
+Вью функция должна выводить все названия треков (title) и соответствующую продолжительность трека в секундах(length) из таблицы tracks.
+<br>
+PATH: /tracks-sec/
+{% endblock %}
+
+{% block container %}
+<!--<form action="/tracks-sec/" method="POST">-->
+<!--    <div class="form-group">-->
+<!--        <button type="submit" name="space" class="btn btn-primary">Display data</button>-->
+<!--    </div>-->
+<!--</form>-->
+<br>
+{% for line in content %}
+<p>{{ line }}</p>
+{% endfor %}
+{% endblock %}
