@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Title text
+{% endblock %}
+
+
+{% block task %}
+Вью функция должна выводить количество уникальных исполнителей (artist) из таблицы tracks.<br>
+PATH: /names/
+{% endblock %}
+
+{% block container %}
+<form action="/names/" method="POST">
+    <div class="form-group">
+        <button type="submit" name="names" class="btn btn-primary">Display data</button>
+    </div>
+</form>
+<br>
+<p>Artists: {{ content }}</p>
+{% endblock %}

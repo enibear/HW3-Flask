@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Title text
+{% endblock %}
+
+
+{% block task %}
+Вью функция должна выводить среднюю продолжительность трека и общую продолжительность всех треков в секундах из таблицы tracks.
+<br>
+PATH: /tracks-sec/statistics/
+{% endblock %}
+
+{% block container %}
+<!--<form action="/space/" method="POST">-->
+<!--    <div class="form-group">-->
+<!--        <button type="submit" name="space" class="btn btn-primary">How much people?</button>-->
+<!--    </div>-->
+<!--</form>-->
+<br>
+<p>Total length: {{ total_sum }} seconds</p>
+<p>Average length: {{ average_sum }} seconds</p>
+{% endblock %}
